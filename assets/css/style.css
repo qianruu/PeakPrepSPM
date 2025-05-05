@@ -1,0 +1,107 @@
+/* Apply Global Font Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Headings (More Stylish) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Improve Paragraph Readability */
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Button Styling */
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Hero Section Font Adjustments */
+.hero-section h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Footer Text Styling */
+.footer {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar-dark .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-light .nav-link {
+    color: #000000 !important;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Navbar Styling */
+.dark-mode .navbar {
+    background-color: #333 !important;
+}
+
+/* Table Dark Mode */
+.dark-mode table {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .table-dark {
+    background-color: #444;
+}
+
+/* Signup Page Styling */
+.card {
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.btn {
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004da8;
+}

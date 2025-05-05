@@ -1,0 +1,17 @@
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar-dark {
+    background-color: #1f1f1f !important;
+}
+
+.table-dark {
+    background-color: #2a2a2a;
+}
+
+.btn-outline-secondary {
+    color: #ffffff;
+    border-color: #ffffff;
+}
