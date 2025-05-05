@@ -1,0 +1,114 @@
+PeakPrepSPM - Installation & Setup Guide
+
+This guide will help you install and run the PeakPrepSPM project on **Windows** and **Mac** using **WAMP, XAMPP, or MAMP**.
+
+---
+
+1️⃣ **System Requirements**
+
+✅ Windows 10/11 or macOS ✅ PHP 7.4 or higher ✅ MySQL 5.7 or higher ✅ Apache Server ✅ WAMP/XAMPP (Windows) or MAMP (Mac)
+
+---
+
+## 2️⃣ **Installation Steps**
+
+### **🖥️ Windows (Using WAMP/XAMPP)**
+
+#### **Step 1: Install WAMP or XAMPP**
+
+- Download and install [**WAMP**](https://www.wampserver.com/en/) or [**XAMPP**](https://www.apachefriends.org/index.html).
+- Start **Apache** and **MySQL** from the WAMP/XAMPP control panel.
+
+#### **Step 2: Download Project Files**
+
+- Download the PeakPrepSPM project folder and extract it.
+- Move the folder into `C:\xampp\htdocs\` (for XAMPP) or `C:\wamp64\www\` (for WAMP).
+
+#### **Step 3: Configure the Database**
+
+1. Open **phpMyAdmin** (`http://localhost/phpmyadmin/` in your browser).
+2. Click **New**, create a database named `peakprep_spm`.
+3. Click on the **Import** tab.
+4. Select `peakprep_spm.sql` from the project folder (`database/` directory) and click **Go**.
+
+#### **Step 4: Configure Database Connection**
+
+- Open `config.php` inside the project folder.
+- Ensure the database credentials match your local server:
+  ```php
+  $servername = "localhost";
+  $username = "root";
+  $password = ""; // Leave empty for XAMPP/WAMP
+  $dbname = "peakprep_spm";
+  ```
+
+#### **Step 5: Start the Application**
+
+- Open your browser and go to:
+  ```
+  http://localhost/PeakPrepSPM/
+  ```
+- The homepage should now be visible! 🎉
+
+---
+
+### **🍏 Mac (Using MAMP)**
+
+#### **Step 1: Install MAMP**
+
+- Download and install [**MAMP**](https://www.mamp.info/en/).
+- Start **MAMP**, ensure Apache and MySQL servers are running.
+
+#### **Step 2: Move Project Files**
+
+- Move the project folder to:\
+  `/Applications/MAMP/htdocs/`
+
+#### **Step 3: Configure Database**
+
+1. Open **phpMyAdmin** (`http://localhost/phpMyAdmin/`).
+2. Create a database named \`\`.
+3. Import the `peakprep_spm.sql` file.
+
+#### **Step 4: Update Database Connection**
+
+- Open `config.php` and modify it like this:
+  ```php
+  $servername = "localhost";
+  $username = "root";
+  $password = "root"; // Default for MAMP
+  $dbname = "peakprep_spm";
+  ```
+
+#### **Step 5: Access the Project**
+
+- Open browser and go to:
+  ```
+  http://localhost:8888/PeakPrepSPM/
+  ```
+
+---
+
+## **3️⃣ Admin Login Credentials**
+
+- **URL:** `http://localhost/PeakPrepSPM/auth/login.php`
+- **Username:** `admin`
+- **Password:** `admin123`
+
+---
+
+## **4️⃣ Troubleshooting**
+
+🔹 If Apache/MySQL won’t start, change the ports in **XAMPP/MAMP settings**. 🔹 If database import fails, check that the `.sql` file is properly selected. 🔹 If blank page appears, enable error reporting by adding:
+
+```php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+```
+
+at the top of `config.php`.
+
+---
+
+## 🎉 **You’re Ready to Use PeakPrepSPM!**
+
